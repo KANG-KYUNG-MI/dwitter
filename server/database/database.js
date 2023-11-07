@@ -1,16 +1,19 @@
-// import MongoDb from 'mongodb';
-// import { config } from '../config.js';
+import MongoDb from 'mongodb';
+import { config } from '../config.js';
 
-// let db;
-// export async function connectDB() {
-//   return MongoDb.MongoClient.connect(config.db.host, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   }) //
-//   .then((client) => {
-//     db = client.db();
-//   });
-// }
+let db;
+export async function connectDB() {
+  return MongoDb.MongoClient.connect(config.db.host, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }) //
+  .then((client) => {
+    db = client.db();
+  });
+}
+
+
+
 
 import Mongoose from 'mongoose';
 import { config } from '../config.js';
