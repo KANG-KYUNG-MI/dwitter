@@ -12,8 +12,6 @@
 //   });
 // }
 
-// zxcvbnmsdfghjksdfghjertyu
-
 
 import Mongoose from 'mongoose';
 import { config } from '../config.js';
